@@ -1,3 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+
+    --primary: #137fec;
+    --background-light: #f6f7f8;
+    --background-dark: #101922;
+    --keypad-bg: #16212b;
+    --nordic-wood: #c4a484;
+    --nordic-clay: #4a5568;
+    --nordic-snow: #e2e8f0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--background-dark);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-calculator{
+    width: 390px;
+    height: 744px;
+    background: var(--background-dark);
+    border-radius: 48px;
+    border: 8px solid #1f2937;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    color: var(--background-light);
+}
+.calculator-header{
+    text-align: center;
+    flex: 1;
+    font-size: 23px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+    padding: 40px 20px 10px;
+}
+.calculator-section-results{
+    flex: 3;
+    padding: 20px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+}
+.operation {
+  font-size: 18px;
+  color: rgba(255,255,255,0.4);
+}
+
+.result {
+  font-size: 72px;
+  font-weight: 200;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.calculator-section-keypad{
+    flex: 6;
+    display: flex;
+    justify-content: space-around;
+    background: var(--keypad-bg);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
 p{
     color: brown;
 }
+.calculator-section-keypad-column{
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+    
+}
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons-special{
+    background-color: var(--nordic-clay);
+}
+
+.buttons-operations{
+    background-color: var(--nordic-wood);
+    color: var(--background-dark);
+}
+
+.button-equal{
+    background-color: var(--primary);
+}
+
